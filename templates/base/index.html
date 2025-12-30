@@ -1,0 +1,413 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himalaya Network Group - Your Gateway to Nepal</title>
+    <meta name="description" content="Himalaya Network Group - Leading business conglomerate in Nepal specializing in trade, tourism, IT solutions, and cultural exchange since 1997." />
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="header-container">
+        <a href="#home" class="logo">
+          <span class="logo-icon">◇</span>
+          <div class="logo-text">
+            <span class="logo-title">Himalaya Network</span>
+            <span class="logo-subtitle">Group of Companies</span>
+          </div>
+        </a>
+
+        <nav class="nav-desktop">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About Us</a>
+          <a href="#services" class="nav-link">Our Services</a>
+          <a href="#companies" class="nav-link">Companies</a>
+          <a href="#gallery" class="nav-link">Gallery</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu"><span class="hamburger"></span></button>
+      </div>
+
+      <nav class="nav-mobile" id="navMobile">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#services" class="nav-link">Our Services</a>
+        <a href="#companies" class="nav-link">Companies</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="hero-badge animate-fade-up">Since 1997</span>
+          <h1 class="hero-title animate-fade-up delay-1">
+            Your Gateway to<br />
+            <span class="text-gradient">Nepal & Beyond</span>
+          </h1>
+          <p class="hero-subtitle animate-fade-up delay-2">Bridging cultures and commerce across continents. From the majestic Himalayas to global markets, we connect businesses with endless opportunities.</p>
+          <div class="hero-buttons animate-fade-up delay-3">
+            <a href="#services" class="btn btn-primary">Explore Services</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+          <div class="hero-stats animate-fade-up delay-4">
+            <div class="stat">
+              <span class="stat-value">25+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">5</span>
+              <span class="stat-label">Companies</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">1000+</span>
+              <span class="stat-label">Clients Worldwide</span>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <span>Scroll to explore</span>
+          <div class="scroll-arrow"></div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">About Us</span>
+            <h2 class="section-title">Himalaya Network Group</h2>
+            <p class="section-subtitle">A legacy of excellence in Nepal-Japan business relations since 1997</p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-content">
+              <p class="about-text">
+                <strong>Himalaya Network Group of Companies</strong> was founded in 1997 with a vision to bridge the gap between Nepal and Japan in trade, tourism, and cultural exchange. What started as a small trading company has grown into a diversified conglomerate with five specialized companies.
+              </p>
+              <p class="about-text">Our journey began with exporting traditional Nepali handicrafts to Japan, and over the years, we have expanded our horizons to include tourism services, IT solutions, real estate, and more.</p>
+              <div class="achievement-badge" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div class="achievement-icon">★</div>
+                <div>
+                  <span class="achievement-title">25+ Years of Excellence</span>
+                  <span class="achievement-text">Trusted by businesses across Nepal and Japan</span>
+                </div>
+              </div>
+            </div>
+            <div class="about-cards about-cards-row">
+              <div class="about-card mission">
+                <div class="card-icon">◎</div>
+                <h3>Our Mission</h3>
+                <p>To facilitate seamless business connections between Nepal and the world, while preserving and promoting Nepali culture and craftsmanship.</p>
+              </div>
+              <div class="about-card vision">
+                <div class="card-icon">◈</div>
+                <h3>Our Vision</h3>
+                <p>To be the leading bridge for international trade and cultural exchange, making Nepal's rich heritage accessible globally.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chairman-message">
+            <div class="chairman-content">
+              <span class="chairman-badge">Executive Chairman's Message</span>
+              <blockquote>"For over two decades, we have been committed to creating meaningful partnerships that benefit both Nepal and our international partners. Our success lies in understanding the unique needs of each market and delivering solutions that create lasting value."</blockquote>
+              <div class="chairman-info">
+                <div class="chairman-avatar">SR</div>
+                <div>
+                  <span class="chairman-name">Mr. Surendra Shakya</span>
+                  <span class="chairman-title">Executive Chairman</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services" id="services">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Our Services</span>
+            <h2 class="section-title">What We Offer</h2>
+            <p class="section-subtitle">Comprehensive business solutions tailored for international success</p>
+          </div>
+
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">🌍</div>
+              <h3>International Trade</h3>
+              <p>Export of authentic Nepali handicrafts, textiles, and artisan products to global markets with quality assurance.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">🏔️</div>
+              <h3>Tourism Services</h3>
+              <p>Curated travel experiences including trekking, cultural tours, and adventure packages across Nepal.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">💻</div>
+              <h3>IT Solutions</h3>
+              <p>Custom software development, web applications, and digital transformation services for modern businesses.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">📋</div>
+              <h3>Business Consulting</h3>
+              <p>Market entry strategies, partnership facilitation, and regulatory guidance for Nepal-Japan business ventures.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">🏠</div>
+              <h3>Real Estate</h3>
+              <p>Property investment opportunities and real estate services in prime locations across Nepal.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">🤝</div>
+              <h3>Cultural Exchange</h3>
+              <p>Educational programs, cultural events, and exchange initiatives promoting Nepal-Japan friendship.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Companies Section -->
+      <section class="companies" id="companies">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Our Companies</span>
+            <h2 class="section-title">Group Companies</h2>
+            <p class="section-subtitle">Five specialized companies working together to serve you better</p>
+          </div>
+
+          <div class="companies-grid">
+            <div class="company-card" style="--accent: #c9a227;">
+              <div class="company-badge">Trading</div>
+              <h3>Himalaya Trading Company</h3>
+              <p>Our flagship trading company specializing in export of Nepali handicrafts, textiles, and traditional products to Japan and international markets.</p>
+            </div>
+            <div class="company-card" style="--accent: #2563eb;">
+              <h3>Himalaya Software Development</h3>
+              <div class="company-badge">Technology</div>
+              <p>Providing cutting-edge IT solutions including custom software development, web applications, and digital transformation services.</p>
+            </div>
+            <div class="company-card" style="--accent: #059669;">
+              <h3>Himalaya Tours & Travels</h3>
+              <div class="company-badge">Tourism</div>
+              <p>Your gateway to experiencing Nepal's natural beauty and cultural heritage through curated travel packages and adventure tours.</p>
+            </div>
+            <div class="company-card" style="--accent: #7c3aed;">
+              <h3>Himalaya Real Estate</h3>
+              <div class="company-badge">Real Estate</div>
+              <p>Premium real estate services offering investment opportunities and property management in Nepal's growing urban centers.</p>
+            </div>
+            <div class="company-card" style="--accent: #dc2626;">
+              <h3>Nepal Japan Cultural Center</h3>
+              <div class="company-badge">Cultural</div>
+              <p>Promoting cultural exchange and understanding between Nepal and Japan through educational programs, events, and initiatives.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Gallery</span>
+            <h2 class="section-title">Our Journey in Pictures</h2>
+            <p class="section-subtitle">Moments captured from our events, trade shows, and cultural exchanges</p>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="gallery-item" data-index="0">
+              <img src="{% static 'assets/image/gallery-1.jpg' %}" alt="Traditional Nepali Handicrafts" />
+              <div class="gallery-overlay">
+                <span class="gallery-caption">Traditional Nepali Handicrafts</span>
+              </div>
+            </div>
+            <div class="gallery-item" data-index="1">
+              <img src="{% static 'assets/image/gallery-2.jpg' %}" alt="International Trade Fair" />
+              <div class="gallery-overlay">
+                <span class="gallery-caption">International Trade Fair</span>
+              </div>
+            </div>
+            <div class="gallery-item" data-index="2">
+              <img src="{% static 'assets/image/gallery-3.jpg' %}" alt="Nepal-Japan Cultural Exchange" />
+              <div class="gallery-overlay">
+                <span class="gallery-caption">Nepal-Japan Cultural Exchange</span>
+              </div>
+            </div>
+            <div class="gallery-item" data-index="3">
+              <img src="{% static 'assets/image/gallery-4.jpg' %}" alt="Tourism in Nepal" />
+              <div class="gallery-overlay">
+                <span class="gallery-caption">Tourism in Nepal</span>
+              </div>
+            </div>
+            <div class="gallery-item" data-index="4">
+              <img src="{% static 'assets/image/gallery-5.jpg' %}" alt="Software Development Center" />
+              <div class="gallery-overlay">
+                <span class="gallery-caption">Software Development Center</span>
+              </div>
+            </div>
+            <div class="gallery-item" data-index="5">
+              <img src="{% static 'assets/image/gallery-6.jpg' %}" alt="Namaste - Traditional Greeting" />
+              <div class="gallery-overlay">
+                <span class="gallery-caption">Namaste - Traditional Greeting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+          <button class="lightbox-close" id="lightboxClose">&times;</button>
+          <button class="lightbox-prev" id="lightboxPrev">&#10094;</button>
+          <button class="lightbox-next" id="lightboxNext">&#10095;</button>
+          <img src="" alt="" class="lightbox-image" id="lightboxImage" />
+          <p class="lightbox-caption" id="lightboxCaption"></p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Contact Us</span>
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Ready to explore opportunities? We'd love to hear from you</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info">
+              <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3>Visit Us</h3>
+                <p>
+                  Kathmandu, Nepal<br />Thamel, Near Garden of Dreams
+                </p>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <h3>Email Us</h3>
+                <p>
+                  info@himalayanetwork.com<br />trade@himalayanetwork.com
+                </p>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3>Call Us</h3>
+                <p>
+                  +977-1-4444444<br />+977-9851234567
+                </p>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">🕐</div>
+                <h3>Business Hours</h3>
+                <p>
+                  Sunday - Friday<br />9:00 AM - 6:00 PM
+                </p>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="How can we help?" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your inquiry..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="logo">
+              <span class="logo-icon">◇</span>
+              <div class="logo-text">
+                <span class="logo-title">Himalaya Network</span>
+                <span class="logo-subtitle">Group of Companies</span>
+              </div>
+            </a>
+            <p>Bridging Nepal and the world through trade, tourism, and cultural exchange since 1997.</p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#about">About Us</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#gallery">Gallery</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-companies">
+            <h4>Our Companies</h4>
+            <ul>
+              <li>Himalaya Trading Company</li>
+              <li>Himalaya Software Development</li>
+              <li>Himalaya Tours & Travels</li>
+              <li>Himalaya Real Estate</li>
+              <li>Nepal Japan Cultural Center</li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <p>Thamel, Kathmandu, Nepal</p>
+            <p>+977-1-4444444</p>
+            <p>info@himalayanetwork.com</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 Himalaya Network Group. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{% static 'assets/js/script.js' %}"></script>
+  </body>
+</html>
