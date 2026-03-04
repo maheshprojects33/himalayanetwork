@@ -55,20 +55,479 @@ const galleryDatabase = [
   },
   {
     id: 5,
-    src: '/static/assets/image/gallery-5.jpg',
-    title: 'Software Development Center',
-    caption: 'Our state-of-the-art technology center where innovative solutions are developed to serve businesses across the globe with cutting-edge IT services.',
-    category: 'technology',
-    tags: ['international', 'business']
-  },
-  {
-    id: 6,
-    src: '/static/assets/image/gallery-6.jpg',
+    src: '/static/assets/image/statue1.png',
     title: 'Namaste - Traditional Greeting',
     caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
     category: 'cultural',
     tags: ['nepal', 'people', 'festival']
-  }
+  },
+  {
+    id: 6,
+    src: '/static/assets/image/temple.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 7,
+    src: '/static/assets/image/award.png',
+    title: 'Nepal Pavilion',
+    caption: 'Best Award and Gold Medal Winner',
+    category: 'exibition',
+    tags: ['japan', 'award']
+  },
+  {
+    id: 8,
+    src: '/static/assets/image/award1.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['japan', 'award']
+  },
+  {
+    id: 9,
+    src: '/static/assets/image/birendra.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 10,
+    src: '/static/assets/image/chair.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 11,
+    src: '/static/assets/image/dana1.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 12,
+    src: '/static/assets/image/dana1.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 13,
+    src: '/static/assets/image/dana2.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 14,
+    src: '/static/assets/image/dana3.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 15,
+    src: '/static/assets/image/dana4.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 16,
+    src: '/static/assets/image/dana5.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 17,
+    src: '/static/assets/image/dana6.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 18,
+    src: '/static/assets/image/dana7.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 19,
+    src: '/static/assets/image/dana8.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 20,
+    src: '/static/assets/image/dana9.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 21,
+    src: '/static/assets/image/dana10.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 22,
+    src: '/static/assets/image/dana11.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 23,
+    src: '/static/assets/image/dana12.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 24,
+    src: '/static/assets/image/dana13.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 25,
+    src: '/static/assets/image/statue.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 26,
+    src: '/static/assets/image/dana14.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 27,
+    src: '/static/assets/image/dipendra.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 28,
+    src: '/static/assets/image/father.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 29,
+    src: '/static/assets/image/fun1.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 30,
+    src: '/static/assets/image/fun2.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 31,
+    src: '/static/assets/image/fun3.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 32,
+    src: '/static/assets/image/hari1.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 33,
+    src: '/static/assets/image/hari2.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 34,
+    src: '/static/assets/image/hari3.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 35,
+    src: '/static/assets/image/hashimo.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['japan', 'people', 'festival']
+  },
+  {
+    id: 36,
+    src: '/static/assets/image/hata.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['japan', 'people', 'festival']
+  },
+  {
+    id: 37,
+    src: '/static/assets/image/home.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 38,
+    src: '/static/assets/image/japan1.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['japan', 'people', 'festival']
+  },
+  {
+    id: 39,
+    src: '/static/assets/image/japan2.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['japan', 'people', 'festival']
+  },
+  {
+    id: 40,
+    src: '/static/assets/image/japan3.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['japan', 'people', 'festival']
+  },
+  {
+    id: 41,
+    src: '/static/assets/image/med1.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['monaco', 'people', 'festival']
+  },
+  {
+    id: 42,
+    src: '/static/assets/image/med2.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 43,
+    src: '/static/assets/image/med3.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 44,
+    src: '/static/assets/image/med4.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 45,
+    src: '/static/assets/image/media1.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 46,
+    src: '/static/assets/image/media2.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 47,
+    src: '/static/assets/image/monaco1.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['monaco', 'people', 'festival']
+  },
+  {
+    id: 48,
+    src: '/static/assets/image/monaco2.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['monaco', 'people', 'festival']
+  },
+  {
+    id: 49,
+    src: '/static/assets/image/monaco3.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['monaco', 'people', 'festival']
+  },
+  {
+    id: 50,
+    src: '/static/assets/image/monaco4.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['monaco', 'people', 'festival']
+  },
+  {
+    id: 51,
+    src: '/static/assets/image/monaco5.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['monaco', 'people', 'festival']
+  },
+  {
+    id: 52,
+    src: '/static/assets/image/monaco6.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['monaco', 'people', 'festival']
+  },
+  {
+    id: 53,
+    src: '/static/assets/image/mori.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['japan', 'people', 'festival']
+  },
+  {
+    id: 54,
+    src: '/static/assets/image/neta1.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 55,
+    src: '/static/assets/image/neta2.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 56,
+    src: '/static/assets/image/neta3.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 57,
+    src: '/static/assets/image/parash.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 58,
+    src: '/static/assets/image/scolor1.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 59,
+    src: '/static/assets/image/scolor2.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 60,
+    src: '/static/assets/image/scolor3.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 61,
+    src: '/static/assets/image/scolor4.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 62,
+    src: '/static/assets/image/scolor5.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  {
+    id: 63,
+    src: '/static/assets/image/scolor6.png',
+    title: 'Namaste - Traditional Greeting',
+    caption: 'The universal greeting of Nepal - Namaste. A gesture of respect and unity that represents the spirit of Himalaya Network Group.',
+    category: 'cultural',
+    tags: ['nepal', 'people', 'festival']
+  },
+  
+  
+
 ];
 
 let currentLightboxIndex = 0;
