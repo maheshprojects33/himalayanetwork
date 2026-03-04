@@ -507,6 +507,7 @@ ul {
   margin-bottom: 1.5rem;
   font-size: 1.05rem;
   line-height: 1.8;
+  text-align: justify;
 }
 
 .about-text strong {
@@ -759,6 +760,9 @@ ul {
   box-shadow: var(--shadow-card);
   border-left: 4px solid var(--accent);
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .company-card:hover {
@@ -777,6 +781,7 @@ ul {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 0.75rem;
+  width: fit-content;
 }
 
 .company-card h3 {
@@ -788,6 +793,14 @@ ul {
 .company-card p {
   color: var(--muted-foreground);
   line-height: 1.7;
+  flex-grow: 1;
+}
+
+.company-card-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (min-width: 768px) {
@@ -798,7 +811,7 @@ ul {
 
 @media (min-width: 1024px) {
   .companies-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -997,8 +1010,10 @@ ul {
   border-radius: var(--radius);
   box-shadow: var(--shadow-card);
   display: flex;
-  align-items: center; /* Center icon and text vertically */
-  gap: 1.25rem; /* Slightly more space between icon and text */
+  align-items: center;
+  /* Center icon and text vertically */
+  gap: 1.25rem;
+  /* Slightly more space between icon and text */
   word-break: break-all;
 }
 
@@ -1159,8 +1174,13 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 1.5rem 0;
+  padding: 1.5rem 1.5rem;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+  box-sizing: border-box;
 }
 
 .footer-bottom p {
@@ -1187,12 +1207,6 @@ ul {
 @media (min-width: 640px) {
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer-bottom {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
   }
 }
 

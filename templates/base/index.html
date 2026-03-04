@@ -28,7 +28,7 @@
           <a href="#about" class="nav-link">About Us</a>
           <a href="#services" class="nav-link">Our Services</a>
           <a href="#companies" class="nav-link">Companies</a>
-          <a href="#gallery" class="nav-link">Gallery</a>
+          <a href="/gallery/" class="nav-link">Gallery</a>
           <a href="#contact" class="nav-link">Contact</a>
         </nav>
 
@@ -40,7 +40,7 @@
         <a href="#about" class="nav-link">About Us</a>
         <a href="#services" class="nav-link">Our Services</a>
         <a href="#companies" class="nav-link">Companies</a>
-        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="/gallery/" class="nav-link">Gallery</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
     </header>
@@ -93,9 +93,9 @@
           <div class="about-grid">
             <div class="about-content">
               <p class="about-text">
-                <strong>Himalaya Network Group of Companies</strong> was founded in 1997 with a vision to bridge the gap between Nepal and Japan in trade, tourism, and cultural exchange. What started as a small trading company has grown into a diversified conglomerate with five specialized companies.
+                <strong>Himalaya Network Group of Companies</strong> was established under the leadership of Mr. Surendra Shakya, is a multipurpose company with a profound commitment to promoting Nepal’s rich heritage, tourism, and trade globally. From its head office at Shree Durbar, Pulchowk, Lalitpur, Nepal, Himalaya Network stands as a beacon of excellence, bringing together a portfolio of businesses dedicated to handicrafts, international trade, tourism, and humanitarian initiatives.
               </p>
-              <p class="about-text">Our journey began with exporting traditional Nepali handicrafts to Japan, and over the years, we have expanded our horizons to include tourism services, IT solutions, real estate, and more.</p>
+              <p class="about-text">The company, registered in Nepal under Registration No. 23441/059/60 with an authorized capital of NPR 48,000,000, has been serving both domestic and international markets for decades. Himalaya Network has always believed in the philosophy of combining commerce with compassion, driving both economic growth and social development.</p>
               <div class="achievement-badge" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                 <div class="achievement-icon">★</div>
                 <div>
@@ -104,7 +104,7 @@
                 </div>
               </div>
             </div>
-            <div class="about-cards about-cards-row">
+            {% comment %} <div class="about-cards about-cards-row">
               <div class="about-card mission">
                 <div class="card-icon">◎</div>
                 <h3>Our Mission</h3>
@@ -115,7 +115,7 @@
                 <h3>Our Vision</h3>
                 <p>To be the leading bridge for international trade and cultural exchange, making Nepal's rich heritage accessible globally.</p>
               </div>
-            </div>
+            </div> {% endcomment %}
           </div>
 
           <div class="chairman-message">
@@ -154,21 +154,7 @@
               <h3>Tourism Services</h3>
               <p>Curated travel experiences including trekking, cultural tours, and adventure packages across Nepal.</p>
             </div>
-            <div class="service-card">
-              <div class="service-icon">💻</div>
-              <h3>IT Solutions</h3>
-              <p>Custom software development, web applications, and digital transformation services for modern businesses.</p>
-            </div>
-            <div class="service-card">
-              <div class="service-icon">📋</div>
-              <h3>Business Consulting</h3>
-              <p>Market entry strategies, partnership facilitation, and regulatory guidance for Nepal-Japan business ventures.</p>
-            </div>
-            <div class="service-card">
-              <div class="service-icon">🏠</div>
-              <h3>Real Estate</h3>
-              <p>Property investment opportunities and real estate services in prime locations across Nepal.</p>
-            </div>
+
             <div class="service-card">
               <div class="service-icon">🤝</div>
               <h3>Cultural Exchange</h3>
@@ -184,35 +170,25 @@
           <div class="section-header">
             <span class="section-badge">Our Companies</span>
             <h2 class="section-title">Group Companies</h2>
-            <p class="section-subtitle">Five specialized companies working together to serve you better</p>
+            <p class="section-subtitle">Our companies working together to serve you better</p>
           </div>
 
           <div class="companies-grid">
-            <div class="company-card" style="--accent: #c9a227;">
-              <div class="company-badge">Trading</div>
-              <h3>Himalaya Trading Company</h3>
-              <p>Our flagship trading company specializing in export of Nepali handicrafts, textiles, and traditional products to Japan and international markets.</p>
-            </div>
-            <div class="company-card" style="--accent: #2563eb;">
-              <h3>Himalaya Software Development</h3>
-              <div class="company-badge">Technology</div>
-              <p>Providing cutting-edge IT solutions including custom software development, web applications, and digital transformation services.</p>
-            </div>
-            <div class="company-card" style="--accent: #059669;">
-              <h3>Himalaya Tours & Travels</h3>
-              <div class="company-badge">Tourism</div>
-              <p>Your gateway to experiencing Nepal's natural beauty and cultural heritage through curated travel packages and adventure tours.</p>
-            </div>
-            <div class="company-card" style="--accent: #7c3aed;">
-              <h3>Himalaya Real Estate</h3>
-              <div class="company-badge">Real Estate</div>
-              <p>Premium real estate services offering investment opportunities and property management in Nepal's growing urban centers.</p>
-            </div>
-            <div class="company-card" style="--accent: #dc2626;">
-              <h3>Nepal Japan Cultural Center</h3>
-              <div class="company-badge">Cultural</div>
-              <p>Promoting cultural exchange and understanding between Nepal and Japan through educational programs, events, and initiatives.</p>
-            </div>
+            <a href="https://himalayanetwork.com/suiren/" target="_blank" class="company-card-link">
+              <div class="company-card" style="--accent: #c9a227;">
+                <div class="company-badge">Non-Profit</div>
+                <h3>Himalaya Dana Foundation (HDF)</h3>
+                <p>A non-profit founded after the 2015 earthquake, aiming to uplift Nepalese communities through Construction of earthquake relief homes in Harisiddhi, Lubhu, Gokarneshwor, and Chandragiri Providing safe, dignified, and fully equipped homes to hundreds of displaced families. Education Relief Project providing scholarships to 150+ deserving children for school education Continuous efforts in health, education, rural development, and disaster relief projects across Nepal.</p>
+              </div>
+            </a>
+
+            <a href="https://himalayanetwork.com/suiren/" target="_blank" class="company-card-link">
+              <div class="company-card" style="--accent: #dc2626;">
+                <h3>Sui-Ren Travels Pvt. Ltd.</h3>
+                <div class="company-badge">Travel and Tour</div>
+                <p>A tourism company symbolized by the Lotus (Sui-Ren in Japanese) representing purity and compassion. Sui-Ren Travels specializes in Personalized and professional travel services, Eco- friendly and responsible tourism. cultural exchange programs between Nepal, Japan, and the world.</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -291,7 +267,7 @@
                 <div class="contact-icon">📍</div>
                 <h3>Visit Us</h3>
                 <p>
-                  Kathmandu, Nepal<br />Thamel, Near Garden of Dreams
+                  Lalitpur, Nepal<br />Shreedurbar, Pulchwok
                 </p>
               </div>
               <div class="contact-card">
@@ -305,7 +281,7 @@
                 <div class="contact-icon">📞</div>
                 <h3>Call Us</h3>
                 <p>
-                  +977-1-4444444<br />+977-9851234567
+                  +9977-1-545 1433<br />+977-98510 25756
                 </p>
               </div>
               <div class="contact-card">
@@ -371,7 +347,7 @@
                 <a href="#services">Services</a>
               </li>
               <li>
-                <a href="#gallery">Gallery</a>
+                <a href="/gallery/">Gallery</a>
               </li>
               <li>
                 <a href="#contact">Contact</a>
@@ -382,29 +358,22 @@
           <div class="footer-companies">
             <h4>Our Companies</h4>
             <ul>
-              <li>Himalaya Trading Company</li>
-              <li>Himalaya Software Development</li>
-              <li>Himalaya Tours & Travels</li>
-              <li>Himalaya Real Estate</li>
-              <li>Nepal Japan Cultural Center</li>
+              <li>Himalaya Dana Foundation (HDF)</li>
+              <li>Sui-Ren Travels Pvt. Ltd.</li>
             </ul>
           </div>
 
           <div class="footer-contact">
             <h4>Contact Info</h4>
-            <p>Thamel, Kathmandu, Nepal</p>
-            <p>+977-1-4444444</p>
+            <p>Shreedurbar, Pulchwok, Lalitpur-3</p>
+            <p>+9977-1-545 1433</p>
             <p>info@himalayanetwork.com</p>
           </div>
         </div>
+      </div>
 
-        <div class="footer-bottom">
-          <p>&copy; 2024 Himalaya Network Group. All rights reserved.</p>
-          <div class="footer-legal">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-          </div>
-        </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Himalaya Network Group. All rights reserved.</p>
       </div>
     </footer>
 
