@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himalaya Network Group - Your Gateway to Nepal</title>
+    <meta name="description" content="Himalaya Network Group - Leading business conglomerate in Nepal specializing in trade, tourism, IT solutions, and cultural exchange since 1997." />
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/gallery.css' %}" />
+    {% block extra_css %}{% endblock %}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    {% include 'base/header.html' %}
+
+    <main>
+      {% block content %}
+
+      {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    {% include 'base/footer.html' %}
+
+    <script src="{% static 'assets/js/script.js' %}"></script>
+    <script src="{% static 'assets/js/gallery.js' %}"></script>
+    <script>
+      // Initialize hero slideshow when page loads
+      document.addEventListener('DOMContentLoaded', initHeroSlideshow)
+    </script>
+    {% block extrajs %}
+    {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">About Us</span>
+      <h2 class="section-title">{{ aboutus.title }}</h2>
+      <p class="section-subtitle">{{ aboutus.subtitle }}</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-content">
+        <p class="about-text">
+          {{ aboutus.description|safe }}
+        </p>
+        <div class="achievement-badge" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <div class="achievement-icon">★</div>
+          <div>
+            <span class="achievement-title">25+ Years of Excellence</span>
+            <span class="achievement-text">Trusted by businesses across Nepal and Japan</span>
+          </div>
+        </div>
+      </div>
+      {% comment %} <div class="about-cards about-cards-row">
+        <div class="about-card mission">
+          <div class="card-icon">◎</div>
+          <h3>Our Mission</h3>
+          <p>To facilitate seamless business connections between Nepal and the world, while preserving and promoting Nepali culture and craftsmanship.</p>
+        </div>
+        <div class="about-card vision">
+          <div class="card-icon">◈</div>
+          <h3>Our Vision</h3>
+          <p>To be the leading bridge for international trade and cultural exchange, making Nepal's rich heritage accessible globally.</p>
+        </div>
+      </div> {% endcomment %}
+    </div>
+
+    <div class="chairman-message">
+      <div class="chairman-content">
+        <span class="chairman-badge">{{ aboutus.message_title }}</span>
+        <blockquote>{{ aboutus.chairman_message }}</blockquote>
+        <div class="chairman-info">
+          <div class="chairman-avatar">{{ initials }}</div>
+          <div>
+            <span class="chairman-name">{{ aboutus.chairman_name }}</span>
+            <span class="chairman-title">{{ aboutus.chairman_title }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

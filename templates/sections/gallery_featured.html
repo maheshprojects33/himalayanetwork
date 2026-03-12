@@ -1,0 +1,58 @@
+{% load static %}
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Gallery</span>
+      <h2 class="section-title">Our Journey in Pictures</h2>
+      <p class="section-subtitle">Moments captured from our events, trade shows, and cultural exchanges</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item" data-index="0">
+        <img src="{% static 'assets/image/gallery-1.jpg' %}" alt="Traditional Nepali Handicrafts" />
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Traditional Nepali Handicrafts</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-index="1">
+        <img src="{% static 'assets/image/gallery-2.jpg' %}" alt="International Trade Fair" />
+        <div class="gallery-overlay">
+          <span class="gallery-caption">International Trade Fair</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-index="2">
+        <img src="{% static 'assets/image/gallery-3.jpg' %}" alt="Nepal-Japan Cultural Exchange" />
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Nepal-Japan Cultural Exchange</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-index="3">
+        <img src="{% static 'assets/image/gallery-4.jpg' %}" alt="Tourism in Nepal" />
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Tourism in Nepal</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-index="4">
+        <img src="{% static 'assets/image/gallery-5.jpg' %}" alt="Software Development Center" />
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Software Development Center</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-index="5">
+        <img src="{% static 'assets/image/gallery-6.jpg' %}" alt="Namaste - Traditional Greeting" />
+        <div class="gallery-overlay">
+          <span class="gallery-caption">Namaste - Traditional Greeting</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <button class="lightbox-prev" id="lightboxPrev">&#10094;</button>
+    <button class="lightbox-next" id="lightboxNext">&#10095;</button>
+    <img src="" alt="" class="lightbox-image" id="lightboxImage" />
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+</section>

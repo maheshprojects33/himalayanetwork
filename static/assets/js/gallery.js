@@ -776,3 +776,4 @@ function previousImage() {
     openLightbox(filteredGallery.length - 1);
   }
 }
+

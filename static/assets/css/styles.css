@@ -306,7 +306,6 @@ ul {
   align-items: center;
   justify-content: center;
   background: var(--gradient-hero);
-  background-image: url("../image/hero-mountains.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -763,6 +762,7 @@ ul {
   display: flex;
   flex-direction: column;
   height: 100%;
+  
 }
 
 .company-card:hover {
@@ -782,6 +782,7 @@ ul {
   letter-spacing: 0.5px;
   margin-bottom: 0.75rem;
   width: fit-content;
+  
 }
 
 .company-card h3 {

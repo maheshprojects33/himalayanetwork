@@ -30,26 +30,52 @@ window.addEventListener('scroll', () => {
 const sections = ['home', 'about', 'services', 'companies', 'gallery', 'contact'];
 const navLinks = document.querySelectorAll('.nav-link');
 
-window.addEventListener('scroll', () => {
-  const scrollPosition = window.scrollY + 150;
+// Function to update active nav link
+function updateActiveNav() {
+  const currentPath = window.location.pathname;
   
-  sections.forEach(sectionId => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      const offsetTop = section.offsetTop;
-      const offsetHeight = section.offsetHeight;
+  // Check if we're on a non-home page (like /gallery/)
+  if (currentPath !== '/' && currentPath !== '') {
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      // Remove .html and / for comparison
+      const linkPage = href.replace(/\/$/, '').replace('.html', '');
+      const currentPage = currentPath.replace(/\/$/, '');
       
-      if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === `#${sectionId}`) {
-            link.classList.add('active');
-          }
-        });
+      if (linkPage === currentPage || href === currentPath) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
       }
-    }
-  });
-});
+    });
+  } else {
+    // On homepage, highlight based on scroll position
+    const scrollPosition = window.scrollY + 150;
+    
+    sections.forEach(sectionId => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        const offsetTop = section.offsetTop;
+        const offsetHeight = section.offsetHeight;
+        
+        if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${sectionId}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+      }
+    });
+  }
+}
+
+// Call on page load
+updateActiveNav();
+
+// Call on scroll
+window.addEventListener('scroll', updateActiveNav);
 
 // ===== Smooth Scroll for Navigation =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -58,15 +84,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const targetId = this.getAttribute('href');
     const targetElement = document.querySelector(targetId);
     
+    console.log('Clicked link:', targetId, 'Target element:', targetElement);
+    
     if (targetElement) {
+      // Element exists on current page, scroll to it
       const headerOffset = 80;
       const elementPosition = targetElement.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+      console.log('Scrolling to:', offsetPosition);
       
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth'
       });
+    } else if (window.location.pathname !== '/') {
+      // Element not found on current page, navigate to homepage with anchor
+      console.log('Target element not found, navigating to homepage with anchor');
+      window.location.href = '/' + targetId;
+    } else {
+      console.log('Target element not found for:', targetId);
     }
   });
 });

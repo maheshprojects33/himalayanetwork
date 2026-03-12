@@ -1,0 +1,33 @@
+<section class="hero" id="home" style="background-image: url('{{ hero.image.url }}');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge animate-fade-up">Since {{ hero.year }}</span>
+    <h1 class="hero-title animate-fade-up delay-1">
+      {{ hero.title|slice:':15' }}<br />
+      <span class="text-gradient">{{ hero.title|slice:'16:' }}</span>
+    </h1>
+    <p class="hero-subtitle animate-fade-up delay-2">{{ hero.description }}</p>
+    <div class="hero-buttons animate-fade-up delay-3">
+      <a href="#services" class="btn btn-primary">Explore Services</a>
+      <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+    </div>
+    <div class="hero-stats animate-fade-up delay-4">
+      <div class="stat">
+        <span class="stat-value">{{ hero.experience }}+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">{{ hero.companies }}</span>
+        <span class="stat-label">Companies</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">{{ hero.clients }}+</span>
+        <span class="stat-label">Clients Worldwide</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll to explore</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>

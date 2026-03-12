@@ -1,0 +1,100 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'assets/css/trade.css' %}" />
+{% endblock %}
+{% block content %}
+  <!-- Projects Hero Section -->
+  <section class="projects-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="section-badge">International Trade</span>
+      <h1 class="hero-title">Our Trade Projects</h1>
+      <p class="hero-subtitle">Bridging Nepal and Japan through trade exhibitions and cultural exchange</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <div class="container">
+      
+      <!-- Pacific Flora 2004 -->
+      <div class="project-card" id="pacific-flora">
+        <div class="project-year">2004</div>
+        <div class="project-grid">
+          <div class="project-images">
+            <div class="project-image-main">
+              <img src="{% static 'assets/image/flora-map.png' %}" alt="Pacific Flora 2004" />
+            </div>
+            <div class="project-image-grid">
+              <img src="{% static 'assets/image/entrance.png' %}" alt="Pacific Flora Detail 1" />
+              <img src="{% static 'assets/image/pavillion.png' %}" alt="Pacific Flora Detail 2" />
+              <img src="{% static 'assets/image/japan1.png' %}" alt="Pacific Flora Detail 3" />
+            </div>
+          </div>
+          <div class="project-content">
+            <h2 class="project-title">Pacific Flora</h2>
+            <p class="project-location">Hamamatsu, Shizuoka, Japan</p>
+            <div class="project-description">
+              <p>The Shizuoka International Garden and Horticulture Exhibition "Pacific Flora 2004" is the third time the international horticultural exhibition has been held in Japan, recognized by the International Association of Horticultural Producers (AIPH). The theme is "Flowers, Greenery, Water: Creating New Style of Living. We at the Himalayan Network are planning the NEPAL GARDEN, which will include a precise recreation of a traditional Nepalese garden, to include a gift shop and restaurant serving authentic Nepalese food. For more information, please see the official Expo website.</p>
+              <p>Our participation in Pacific Flora 2004 helped establish lasting business relationships with Japanese importers and distributors. The exhibition provided a platform to introduce Nepal's unique products to a sophisticated market, leading to successful export deals that continue to benefit Nepali artisans and farmers.</p>
+            </div>
+            <div class="project-highlights">
+              <h4>Key Highlights</h4>
+              <ul>
+                <li>Over 10,000 visitors attended</li>
+                <li>Established 25+ business partnerships</li>
+                <li>Featured traditional Nepali handicrafts, pashmina, and organic products</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fukuoka Fair 2005 -->
+      <div class="project-card" id="fukuoka-fair">
+        <div class="project-year">2005</div>
+        <div class="project-grid">
+          <div class="project-images">
+            <div class="project-image-main">
+              <img src="{% static 'assets/image/home.png' %}" alt="Fukuoka Fair 2005" />
+            </div>
+            <div class="project-image-grid">
+              <img src="{% static 'assets/image/gallery-1.jpg' %}" alt="Fukuoka Fair Detail 1" />
+              <img src="{% static 'assets/image/gallery-2.jpg' %}" alt="Fukuoka Fair Detail 2" />
+            </div>
+          </div>
+          <div class="project-content">
+            <h2 class="project-title">Fukuoka Fair</h2>
+            <p class="project-location">Fukuoka, Japan</p>
+            <div class="project-description">
+              <p>The Fukuoka Fair 2005 built upon the success of Pacific Flora, expanding Nepal's presence in the Japanese market. This comprehensive trade exhibition focused on 'Life Cycle of Lord Buddha in a Flower Garden'.</p>
+              <p>Our delegation showcased Nepal's rich cultural heritage, adventure tourism opportunities, and investment potential. The fair featured live demonstrations of traditional Nepali crafts, cultural performances, and business matchmaking sessions that connected Nepali entrepreneurs with Japanese investors.</p>
+            </div>
+            <div class="project-highlights">
+              <h4>Key Highlights</h4>
+              <ul>
+                <li>Promoted Nepal as a premier tourism destination</li>
+                <li>Featured investment opportunities in Nepal</li>
+                <li>Cultural performances showcasing Nepali traditions</li>
+                <li>Business forums connecting 100+ Japanese companies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Interested in Trade Partnership?</h2>
+        <p>Let's discuss how we can help connect your business with international markets</p>
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+{% endblock %}

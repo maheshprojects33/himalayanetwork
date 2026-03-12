@@ -1,0 +1,22 @@
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Our Services</span>
+      <h2 class="section-title">{{ services.title }}</h2>
+      <p class="section-subtitle">{{ services.subtitle }}</p>
+    </div>
+
+    <div class="services-grid">
+      {% for card in service_cards %}
+      <a href="/trade/" class="service-card-link">
+      <div class="service-card">
+        <div class="service-icon">{{ card.icon|safe }}</div>
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.description }}</p>
+      </div>
+      </a>
+      {% endfor %}
+      
+    </div>
+  </div>
+</section>

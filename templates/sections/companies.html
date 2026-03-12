@@ -1,0 +1,40 @@
+{% load static %}
+<section class="companies" id="companies">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Our Companies</span>
+      <h2 class="section-title">{{ company.title }}</h2>
+      <p class="section-subtitle">{{ company.subtitle }}</p>
+    </div>
+
+    <div class="companies-grid">
+      {% comment %} {% for card in company_cards  %}
+      <a href="/hdf/" target="_blank" class="company-card-link">
+        <div class="company-card" style="--accent: #c9a227;">
+          <div class="company-badge">{{ card.tag }}</div>
+          <h3>{{ card.name }}</h3>
+          <p>{{ card.description }}</p>
+        </div>
+      </a>
+      {% endfor %} {% endcomment %}
+
+      <a href="/hdf/"  class="company-card-link">
+        <div class="company-card" style="--accent: #c9a227;">
+          <div class="company-badge">Non-Profit</div>
+          <h3>Himalaya Dana Foundation (HDF)</h3>
+          <p>A non-profit founded after the 2015 earthquake, aiming to uplift Nepalese communities through Construction of earthquake relief homes in Harisiddhi, Lubhu, Gokarneshwor, and Chandragiri Providing safe, dignified, and fully equipped homes to hundreds of displaced families. Education Relief Project providing scholarships to 150+ deserving children for school education Continuous efforts in health, education, rural development, and disaster relief projects across Nepal.</p>
+        </div>
+      </a>
+      <a href="https://himalayanetwork.com/suiren/" target="_blank" class="company-card-link">
+        <div class="company-card" style="--accent: #c9a227;">
+          <div class="company-badge">Non-Profit</div>
+          <h3>Sui-Ren Travels Pvt. Ltd.</h3>
+          <p>A tourism company symbolized by the Lotus (Sui-Ren in Japanese) representing purity and compassion. Sui-Ren Travels specializes in Personalized and professional travel services, Eco- friendly and responsible tourism. cultural exchange programs between Nepal, Japan, and the world.</p>
+        </div>
+      </a>
+      
+
+      
+    </div>
+  </div>
+</section>

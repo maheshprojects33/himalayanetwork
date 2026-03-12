@@ -1,0 +1,78 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+  <!-- Gallery Hero Section -->
+  <section class="gallery-hero">
+    <div class="hero-slideshow">
+      <img src="{% static 'assets/image/home.png' %}" alt="Gallery Image 1" class="slide active" />
+      <img src="{% static 'assets/image/gallery-3.jpg' %}" alt="Gallery Image 2" class="slide" />
+      <img src="{% static 'assets/image/award.png' %}" alt="Gallery Image 2" class="slide" />
+      <img src="{% static 'assets/image/gallery-4.jpg' %}" alt="Gallery Image 3" class="slide" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Our Gallery</h1>
+      <p class="hero-subtitle">Moments captured from our events, trade shows, and cultural exchanges</p>
+    </div>
+  </section>
+
+  <!-- Gallery Page Section -->
+  <section class="gallery-page">
+    <div class="container">
+      <!-- Filters Compact Bar -->
+      <div class="gallery-filters-compact">
+        <div class="filter-categories">
+          <button class="filter-tag category-tag active" data-category="*">All</button>
+          {% for category in gallery_categories %}
+          <button class="filter-tag category-tag" data-category="{{ category.category|lower }}">{{ category.category|title }}</button>
+          {% endfor %}
+          
+        </div>
+
+        <div class="filter-tags">
+          <button class="filter-tag tag-tag active" data-tag="*">All Tags</button>
+          {% for tag in gallery_tags %}
+          <button class="filter-tag tag-tag" data-tag="{{ tag.tags|lower }}">{{ tag.tags|title }}</button>
+          {% endfor %}
+          
+        </div>
+
+        <button class="reset-filters" id="resetFilters">Reset</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Gallery items will be dynamically generated here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="gallery-lightbox" id="galleryLightbox">
+    <div class="lightbox-overlay"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+
+      <div class="lightbox-content">
+        <img src="" alt="" class="lightbox-image" id="lightboxImage" />
+        <div class="lightbox-info">
+          <h3 class="lightbox-title" id="lightboxTitle"></h3>
+          <p class="lightbox-caption" id="lightboxCaption"></p>
+          <div class="lightbox-tags" id="lightboxTags"></div>
+        </div>
+      </div>
+
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous"><span>&#10094;</span></button>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next"><span>&#10095;</span></button>
+
+      <div class="lightbox-counter">
+        <span id="currentImageNumber"></span> / <span id="totalImageCount"></span>
+      </div>
+    </div>
+  </div>
+  
+{% endblock %}
+
+{% block extrajs %}
+  
+{% endblock %}
